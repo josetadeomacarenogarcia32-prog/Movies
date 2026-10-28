@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,200,300,800');
+
+/*Diseño que es general para toda la pagina y que se cambiaron algunos estilos para adaptarse */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh; /*era para que todo el contenido se viera en la screen*/
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #e5e9f0;
+    background: #10151d;
+    text-align: center;
+}
+
+h1 { font-weight: 300; }
+h1 span { color: #9689bd; }
+
+.intro { /*este es para que el texto se vea centrado */
+    color: #9ba6b5;
+    margin-bottom: 35px;
+}
+
+/* Distribucion de las tarjetas */
+.profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* estilo que van a usar las dos cards compartido */
+.snip0056 {
+    position: relative;
+    overflow: hidden; /* este es para que el contenido de la card no se desborde de la card */
+    width: 100%;
+    max-width: 420px;
+    min-width: 290px;
+    margin: 10px;
+    background: #1a222e;
+    border: 1px solid #303b4a; /* borde de la card redondeado*/
+    color: #e5e9f0;
+    border-radius: 10px; /* este es para que las cards tengan un efecto de sombra */
+}
+
+/* imgs circulares en las cards */
+.snip0056 > img {
+    width: 48%;
+    aspect-ratio: 1;
+    object-fit: cover; /* este es para que el objeto(la imagen) se vea bien en la card */
+    border-radius: 50%;
+    border: 4px solid #8299b8;
+    float: right;
+    margin: 15px -3% 15px 0;
+    transition: 0.3s;
+}
+
+/* Texto ubicado a la izquierda */
+.snip0056 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53%;
+    padding: 18px 12px;
+    text-align: left;
+}
+
+.snip0056 h2 {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid #394354;
+    padding-bottom: 8px;
+}
+
+.snip0056 h2 span { font-weight: 800; }
+
+.snip0056 p {
+    color: #aeb8c7;
+    font-size: 13px;
+    line-height: 1.5; /*espaciado entre lineas de texto */
+}
+
+/* Iconos decorativos */
+.snip0056 .icons a {
+    margin-right: 8px;
+    color: #b9c9df;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* etiquetas inferiores */
+.snip0056 .position {
+    clear: both;
+    padding: 13px 15px;
+    background: #27384b;
+    color: #d5e1ef;
+    font-size: 12px;
+    letter-spacing: 2px; /*espaciado entre letras */
+}
+
+/* Diferenciar los dos temas */
+.espiritual { border-top: 3px solid #8299b8; }
+.mental { border-top: 3px solid #9689bd; }
+.mental > img { border-color: #9689bd; }
+.mental .position {
+    background: #383149;
+    color: #d4c9ee;
+}
+
+/* Efecto al pasar el cursor */
+.snip0056:hover > img {
+    transform: scale(1.05);
+}

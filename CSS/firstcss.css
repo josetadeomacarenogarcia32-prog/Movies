@@ -1,0 +1,99 @@
+:root{
+    --height: 100vh;
+    --primary: rgb(110, 126, 145);
+    --primary-rgb: 110, 126, 145;
+
+    --height-middle: calc(var(var(--height)) / 2);
+}
+
+:root[mdb-theme="dark"]{
+    background-color: black;
+    color: white; 
+}
+
+:root[mdb-theme="light"]{
+    background-color: white;
+    color: black; 
+}
+
+body{
+
+}
+
+p {
+    /*height: var(--height);*/
+    font-size: 12px;
+    color: rebeccapurple;
+}
+
+div.container {
+    background-color: rgba(var(--primary-rgb), 0.5);
+}
+
+div p {
+    color: crimson;
+}
+
+div {
+    background-color: rgb(219, 213, 224);
+
+    p{
+        color:greenyellow;
+    }
+}
+
+p.green {
+    color: lime;
+    background-color: black;
+    margin: 10px;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.cajita-brr {
+    border: 2px;
+    border-style: dashed;
+    border-color: black;
+    height: 200px;
+    box-sizing: box-border;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+
+    
+}
+
+.d-flex2 {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 10px;
+}
+
+.d-flex3 {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin: 10px;
+}
+
+.d-flex4 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 10px;
+}
+
+.d-flex5 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 10px;
+}
